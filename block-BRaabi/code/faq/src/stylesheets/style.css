@@ -1,0 +1,22 @@
+.active {
+  display: block;
+}
+.disable {
+  display: none;
+}
+body {
+  height: 60vh;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 30vh;
+  width: 500px;
+  align-self: center;
+}
+.flex {
+  display: flex;
+}
