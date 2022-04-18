@@ -1,0 +1,42 @@
+body {
+  height: 60vh;
+}
+.nav {
+  display: flex;
+  list-style: none;
+}
+.nav li {
+  margin-left: 1rem;
+}
+.avatar {
+  width: 500px;
+  margin-top: 5vh;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30vh;
+}
+button {
+  width: 120px;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.flex {
+  display: flex;
+}
+h3 {
+  font-size: 35px;
+}
+h5 {
+  font-size: 30px;
+  text-align: center;
+}
+.limits {
+  margin-bottom: 50px;
+}
+.active {
+  background-color: rgb(93, 134, 17);
+}
