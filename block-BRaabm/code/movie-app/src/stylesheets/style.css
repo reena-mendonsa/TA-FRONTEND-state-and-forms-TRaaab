@@ -1,0 +1,60 @@
+body {
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+.movie {
+  border: 2px solid rgb(182, 182, 182);
+  width: 400px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+.movie__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* border: 2px solid green; */
+}
+img {
+  width: 250px;
+  height: 300px;
+}
+.modal__styles {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  font-size: larger;
+  padding: 30px;
+}
+.cross {
+  text-align: right;
+  margin-right: 30px;
+}
+h1 {
+  text-align: center;
+}
+.gallery img {
+  margin: 10px;
+  width: 200px;
+  border: 2px solid orange;
+}
+.full {
+  width: 100%;
+}
+.full .movie__section {
+  border: 1px solid;
+  width: 90%;
+  margin: 0 auto;
+}
+article button {
+  visibility: hidden;
+}
+article:hover button {
+  visibility: visible;
+}
