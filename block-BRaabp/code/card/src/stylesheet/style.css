@@ -1,0 +1,240 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  /* border: 1px solid rgba(128, 128, 128, 0.178); */
+  margin: auto;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+.flex {
+  display: flex;
+}
+.flex_wrap {
+  flex-wrap: wrap;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.items_center {
+  align-items: center;
+}
+
+.flex_30 {
+  flex: 0 1 30%;
+  border: 1px solid rgb(216, 212, 212);
+  overflow-x: auto;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+header {
+  border: 1px solid rgba(128, 128, 128, 0.089);
+  padding: 0.1rem 1rem;
+  border-radius: 3rem;
+}
+.header_animate {
+  position: relative;
+  animation: myfirst 10s 1;
+  animation-fill-mode: forwards;
+}
+.input_div {
+  margin-top: 1rem;
+  width: 50%;
+}
+.select {
+  border: none;
+  background: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1.5rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.233);
+}
+.inputStyle {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  border: none;
+  border: 1px solid grey;
+  outline: none;
+}
+.range_div {
+  width: 30%;
+}
+.range_par {
+  margin-right: 2rem;
+}
+
+/* ----------------------------------------- */
+
+input[type="range"] {
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 2rem;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #2497e3;
+  border-radius: 1px;
+  border: 0px solid #000000;
+  border-radius: 2rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #2497e3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #a1d0ff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+  border-radius: 2rem;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #2497e3;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #2497e3;
+  border-radius: 1px;
+  border: 0px solid #000000;
+  border-radius: 2rem;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #2497e3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #a1d0ff;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  border-radius: 2rem;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #2497e3;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+  border-radius: 2rem;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #2497e3;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+  border-radius: 2rem;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #2497e3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #a1d0ff;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #2497e3;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #2497e3;
+}
+
+/* ------------------ */
+.family_count {
+  padding: 0 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.185);
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 30%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 250px;
+  position: relative;
+  margin: 0.5rem;
+  animation: myfirst 10s running 1;
+  animation-fill-mode: forwards;
+}
+@keyframes myfirst {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  10% {
+    left: 0px;
+    top: 20px;
+  }
+  30% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.allCards .style-ubuntu {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.allCards .style-roboot {
+  font-family: "Allison", cursive;
+}
+
+.allCards .style-Allison {
+  font-family: "Amatic SC", cursive;
+}
+
+.allCards .style-nunito {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.allCards .style-besley {
+  font-family: "Caveat", cursive;
+}
+
+.allCards .style-worksans {
+  font-family: "Kaushan Script", cursive;
+}
+
+.allCards .style-mukta {
+  font-family: "Shadows Into Light", cursive;
+}
+.allCards .style-alumnisans {
+  font-family: "Titillium Web", sans-serif;
+}
+.allCards .style-serif {
+  font-family: "Kaushan Script", cursive;
+}
+
+.allCards .style-tc {
+  font-family: "Allison", cursive;
+}
+
+.font_family {
+  line-height: 0;
+}
