@@ -1,0 +1,83 @@
+/* .flex {
+  display: flex;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  flex-direction: none;
+} */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid grey; */
+}
+.flex {
+  display: flex;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.items_center {
+  align-items: center;
+}
+.shipping,
+.billing {
+  width: 46%;
+}
+.checkbox {
+  width: 50%;
+}
+.check {
+  width: 3rem;
+  border: 1px solid;
+  display: block;
+}
+form {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  height: 50vh;
+  border: 1px solid rgba(128, 128, 128, 0.548);
+}
+label {
+  display: block;
+  margin-top: 1rem;
+}
+input {
+  display: block;
+  width: 90%;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.411);
+  padding: 0.5rem 0.3rem;
+}
+.checkbox {
+  position: absolute;
+  left: -7rem;
+  top: 3rem;
+}
+.checkbox_Div {
+  position: relative;
+  /* padding: 1rem; */
+  /* border: 1px solid; */
+}
+.billing__section {
+  flex: 0 1 50%;
+}
+.checkboxForm {
+  border: none;
+  height: 30px;
+  position: relative;
+  /* border: 2px solid green; */
+  align-items: center;
+}
+.checkboxForm input,
+.checkboxForm label {
+  display: inline-block;
+}
+.checkboxForm input {
+  flex: 0 1 20%;
+}
