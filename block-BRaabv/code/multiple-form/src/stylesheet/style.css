@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Nunito&family=Poppins&display=swap");
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(224, 237, 241);
+}
+
+.container {
+  max-width: 1330px;
+  width: 100%;
+  padding: 32px 0;
+  margin: 0 auto;
+}
+
+form {
+  font-family: "Nunito", sans-serif;
+  width: 900px;
+  box-shadow: 2px 2px 4px 2px rgb(221, 219, 219);
+  border-radius: 3rem;
+  background-color: rgb(241, 251, 253);
+  margin: 0 auto;
+}
+
+.input {
+  font-family: "Mukta", sans-serif;
+  width: 180px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  outline: none;
+}
+
+.full-width {
+  width: 400px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1fr;
+}
+
+.error {
+  border: 1px solid red;
+  color: red;
+  background-color: rgb(240, 162, 162);
+}
+
+.error-msg {
+  color: red;
+}
+
+img {
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  height: 675px;
+  width: 307px;
+}
+
+.space {
+  padding: 7rem 5rem;
+  text-align: left;
+  position: relative;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.3rem;
+  margin-left: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.btn-secondary {
+  background-color: rgb(241, 251, 253);
+  position: absolute;
+  right: 11rem;
+}
+
+.btn-primary,
+.btn-success {
+  background-color: rgb(6, 101, 245);
+  color: white;
+  position: absolute;
+  right: 4rem;
+}
+
+.selected-step {
+  padding: 0.2rem 0.5rem;
+  background-color: rgb(6, 101, 245);
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.gap {
+  margin-right: 1.5rem;
+}
+
+hr {
+  background-color: rgb(216, 213, 213);
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+.block {
+  display: block;
+}
+
+h6 {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.contain {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
