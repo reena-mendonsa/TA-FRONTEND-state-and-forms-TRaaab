@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;400;500;600;700&display=swap");
+
+body {
+  line-height: 1.5;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+.container {
+  max-width: 1330px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.flex-30 {
+  flex: 1 0 20%;
+  margin-right: 1rem;
+}
+
+.flex-60 {
+  flex: 1 0 70%;
+  margin-left: 1rem;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid rgb(221, 218, 218);
+  background-color: rgb(221, 218, 218);
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.circle:hover {
+  border: 1px solid black;
+}
+
+.active {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1fr;
+}
+
+.box {
+  width: 250px;
+  height: 550px;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.image {
+  width: 250px;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3rem 0.6rem;
+  background-color: black;
+  color: white;
+  font-size: 0.6rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+hr {
+  background-color: goldenrod;
+  height: 2px;
+  color: goldenrod;
+  width: 3rem;
+  border: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+select {
+  background-color: white;
+  padding: 0.2rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.cart-logo {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.cart-count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: goldenrod;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  font-weight: 600;
+}
+
+.product-size {
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.product-size:hover {
+  background-color: black;
+  color: white;
+}
+
+.cart-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cross {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.cart-products {
+  border-bottom: 1px solid gray;
+  width: 600px;
+  padding: 1rem;
+  margin: 0.8rem auto;
+}
+
+.center {
+  text-align: center;
+}
